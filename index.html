@@ -19,6 +19,16 @@
       align-items: center;
       border-bottom: 1px solid #ccc;
     }
+    .title-container {
+      display: flex;
+      align-items: center;
+    }
+    .title-container img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
     .title {
       font-size: 1.4rem;
       font-weight: bold;
@@ -55,7 +65,10 @@
 </head>
 <body>
   <header>
-    <div class="title">Anandajayarajan Udayakumar</div>
+    <div class="title-container">
+      <img src="profile.jpg" alt="Profile Picture" />
+      <div class="title">Anandajayarajan Udayakumar</div>
+    </div>
     <nav>
       <a href="#about">About</a>
       <a href="#interests">Research</a>
