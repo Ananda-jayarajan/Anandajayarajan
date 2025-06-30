@@ -15,23 +15,9 @@
       background-color: #f1f1f1;
       padding: 1rem 2rem;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       border-bottom: 1px solid #ccc;
-    }
-    .title-container {
-      display: flex;
-      align-items: center;
-    }
-    .title-container img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      margin-right: 1rem;
-    }
-    .title {
-      font-size: 1.4rem;
-      font-weight: bold;
     }
     nav a {
       margin-left: 1.2rem;
@@ -44,8 +30,18 @@
     }
     main {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+    }
+    .about-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    .about-container img {
+      width: 180px;
+      border-radius: 5px;
+      flex-shrink: 0;
     }
     h1, h2 {
       margin-top: 2rem;
@@ -65,10 +61,6 @@
 </head>
 <body>
   <header>
-    <div class="title-container">
-      <img src="profile.jpg" alt="Profile Picture" />
-      <div class="title">Anandajayarajan Udayakumar</div>
-    </div>
     <nav>
       <a href="#about">About</a>
       <a href="#interests">Research</a>
@@ -80,9 +72,12 @@
   <main>
     <section id="about">
       <h1>About</h1>
-      <p>
-        Anand Udayakumar graduated from Pondicherry University with a graduate degree in Nanotechnology. He did his undergraduate degree B.Tech. in Chemical and Electrochemical Engineering at CSIR-CECRI, a prestigious institution for electrochemistry. He pursued his undergraduate research under Dr. M. Sathish, focusing on graphene-based electrodes for supercapacitors. In 2019, he completed a summer internship at Aalto University, Finland, working on Electrochemical Impedance Spectroscopy. He later worked with Prof. A. Subramania on electrocatalytic water splitting. He has published three research articles in electrochemical water splitting and supercapacitors. These experiences deepened his interest in electrochemical conversion and storage devices.
-      </p>
+      <div class="about-container">
+        <img src="profile.jpg" alt="Anandajayarajan Udayakumar" />
+        <p>
+          Anand Udayakumar graduated from Pondicherry University with a graduate degree in Nanotechnology. He did his undergraduate degree B.Tech. in Chemical and Electrochemical Engineering at CSIR-CECRI, a prestigious institution for electrochemistry. He pursued his undergraduate research under Dr. M. Sathish, focusing on graphene-based electrodes for supercapacitors. In 2019, he completed a summer internship at Aalto University, Finland, working on Electrochemical Impedance Spectroscopy. He later worked with Prof. A. Subramania on electrocatalytic water splitting. He has published three research articles in electrochemical water splitting and supercapacitors. These experiences deepened his interest in electrochemical conversion and storage devices.
+        </p>
+      </div>
     </section>
 
     <section id="interests">
